@@ -1,0 +1,31 @@
+public class MyClass {
+    public static void main(String args[]) {
+      int monthlysalary=25000;
+		System.out.println("Your monthlysalary is="+monthlysalary);
+		int hra=(monthlysalary/100)*20;
+		System.out.println("HRA="+hra);
+		int da=(monthlysalary/100)*40+hra;
+		System.out.println("DA="+da);
+		int ta=(monthlysalary/100)*10;
+		System.out.println("TA="+ta);
+		int annualsalary=monthlysalary*12;
+		System.out.println("Your annualsalary is="+annualsalary);
+		if(annualsalary<500000)
+		{
+		    System.out.println("Incometax="+annualsalary*0);
+		}
+          	else if((annualsalary>=500000)&&(annualsalary<1000000))
+		{
+		    System.out.println("Incometax="+annualsalary/100*10);
+		}
+		else if((annualsalary>=100000)&&(annualsalary<2000000))
+		{
+		    System.out.println("Incometax="+annualsalary/100*20);
+		}
+		else if(annualsalary>=2000000)
+		{
+		    System.out.println("Incometax="+annualsalary/100*30);
+		}
+		
+    }
+}
